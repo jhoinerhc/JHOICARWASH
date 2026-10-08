@@ -1,0 +1,6 @@
+{
+  "name": "JHOICARWASH MotoCraft & Auto Care POS & CRM",
+  "description": "Sistema integral de punto de venta (POS), gestión de turnos y analítica comercial para el centro de estética vehicular JHOICARWASH MotoCraft & Auto Care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

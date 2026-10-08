@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cobalt: #003399;
+    --color-titanium: #3A3D40;
+    --color-silver: #E5E8EC;
+    --color-neon-cyan: #00E5FF;
+    --color-dark-bg: #0B0F17;
+    --color-card-bg: #141B26;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #0B0F17;
+    color: #E5E8EC;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom glow and accent styling for JHOICARWASH high performance aesthetics */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.35);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.25);
+}
+
+.glow-cobalt {
+  box-shadow: 0 0 20px rgba(0, 51, 153, 0.4);
+}
+
+.border-neon {
+  border-color: #00E5FF;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #283344;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00E5FF;
+}
+
+/* Print Styles for Exporting or Printing Orders / Reports */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-area {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}
